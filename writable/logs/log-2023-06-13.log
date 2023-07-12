@@ -1,0 +1,75 @@
+INFO - 2023-06-13 09:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 09:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:38:56 --> Cannot call constructor
+in APPPATH\Controllers\TodoList.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TodoList->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:40:06 --> Undefined variable: prio
+in APPPATH\Views\todolist\input_problem_view.php on line 66.
+ 1 APPPATH\Views\todolist\input_problem_view.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: prio', 'D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolist/input_problem_view', [], true)
+ 5 APPPATH\Controllers\TodoList.php(19): view('todolist/input_problem_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:41:47 --> Undefined variable: prio
+in APPPATH\Views\todolist\input_problem_view.php on line 66.
+ 1 APPPATH\Views\todolist\input_problem_view.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: prio', 'D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolist/input_problem_view', [], true)
+ 5 APPPATH\Controllers\TodoList.php(21): view('todolist/input_problem_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:46:40 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\ModelInputProblem.php on line 13.
+ 1 APPPATH\Controllers\TodoList.php(20): App\Models\ModelInputProblem->prioritas()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:53:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Models\ModelInputProblem.php on line 13.
+ 1 APPPATH\Controllers\TodoList.php(20): App\Models\ModelInputProblem->prioritas()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:53:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Models\ModelInputProblem.php on line 13.
+ 1 APPPATH\Controllers\TodoList.php(20): App\Models\ModelInputProblem->prioritas()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-13 09:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 09:53:44 --> Undefined variable: prio
+in APPPATH\Views\todolist\input_problem_view.php on line 66.
+ 1 APPPATH\Views\todolist\input_problem_view.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: prio', 'D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolist/input_problem_view', [...], true)
+ 5 APPPATH\Controllers\TodoList.php(21): view('todolist/input_problem_view', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

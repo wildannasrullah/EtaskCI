@@ -1,0 +1,77 @@
+ERROR - 2023-05-29 09:46:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+GROUP BY `p`.`idProb`
+ORDER BY `p`.`idcat` ASC, `idprob`
+ LIMIT ' at line 8 in D:\Project\xampp\htdocs\etask\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Project\xampp\htdocs\etask\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Project\xampp\htdocs\etask\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Project\xampp\htdocs\etask\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Project\xampp\htdocs\etask\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Project\xampp\htdocs\etask\app\Models\ModelDashboard.php(64): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Project\xampp\htdocs\etask\app\Controllers\Dashboard.php(23): App\Models\ModelDashboard->queryDashboard('', '0', '10')
+#6 D:\Project\xampp\htdocs\etask\system\CodeIgniter.php(934): App\Controllers\Dashboard->table_dashboard()
+#7 D:\Project\xampp\htdocs\etask\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 D:\Project\xampp\htdocs\etask\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Project\xampp\htdocs\etask\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-29 09:46:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+GROUP BY `p`.`idProb`
+ORDER BY `p`.`idcat` ASC, `idprob`
+ LIMIT ' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tproblems` `p`
+LEFT JOIN `mcategories` `c` ON `p`.`idcat` = `c`.`idcat`
+LEFT JOIN `tmesin` `m` ON `p`.`id_mesin` = `m`.`idMesin`
+LEFT JOIN `tmesinunit` `n` ON `p`.`id_unit_mesin` = `n`.`idUnit`
+LEFT JOIN `tassign` `ta` ON `p`.`idprob` = `ta`.`no_pelaporan`
+LEFT JOIN `user` `u` ON `u`.`username` = `ta`.`pic_handling`
+WHERE 0 = :0:
+AND 1 = :1:
+GROUP BY `p`.`idProb`
+ORDER BY `p`.`idcat` ASC, `idprob`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tproblems` `p`
+LEFT JOIN `mcategories` `c` ON `p`.`idcat` = `c`.`idcat`
+LEFT JOIN `tmesin` `m` ON `p`.`id_mesin` = `m`.`idMesin`
+LEFT JOIN `tmesinunit` `n` ON `p`.`id_unit_mesin` = `n`.`idUnit`
+LEFT JOIN `tassign` `ta` ON `p`.`idprob` = `ta`.`no_pelaporan`
+LEFT JOIN `user` `u` ON `u`.`username` = `ta`.`pic_handling`
+WHERE 0 = :0:
+AND 1 = :1:
+GROUP BY `p`.`idProb`
+ORDER BY `p`.`idcat` ASC, `idprob`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tproblems` `p`
+LEFT JOIN `mcategories` `c` ON `p`.`idcat` = `c`.`idcat`
+LEFT JOIN `tmesin` `m` ON `p`.`id_mesin` = `m`.`idMesin`
+LEFT JOIN `tmesinunit` `n` ON `p`.`id_unit_mesin` = `n`.`idUnit`
+LEFT JOIN `tassign` `ta` ON `p`.`idprob` = `ta`.`no_pelaporan`
+LEFT JOIN `user` `u` ON `u`.`username` = `ta`.`pic_handling`
+WHERE 0 = :0:
+AND 1 = :1:
+GROUP BY `p`.`idProb`
+ORDER BY `p`.`idcat` ASC, `idprob`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tproblems` `p`
+LEFT JOIN `mcategories` `c` ON `p`.`idcat` = `c`.`idcat`
+LEFT JOIN `tmesin` `m` ON `p`.`id_mesin` = `m`.`idMesin`
+LEFT JOIN `tmesinunit` `n` ON `p`.`id_unit_mesin` = `n`.`idUnit`
+LEFT JOIN `tassign` `ta` ON `p`.`idprob` = `ta`.`no_pelaporan`
+LEFT JOIN `user` `u` ON `u`.`username` = `ta`.`pic_handling`
+WHERE 0 = :0:
+AND 1 = :1:
+GROUP BY `p`.`idProb`
+ORDER BY `p`.`idcat` ASC, `idprob`
+ LIMIT 10', [...], false)
+ 5 APPPATH\Models\ModelDashboard.php(64): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dashboard.php(23): App\Models\ModelDashboard->queryDashboard('', '0', '10')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->table_dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

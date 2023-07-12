@@ -1,0 +1,57 @@
+INFO - 2023-05-31 01:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 01:56:37 --> Use of undefined constant series - assumed 'series' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\todolist\input_problem_view.php on line 24.
+ 1 APPPATH\Views\todolist\input_problem_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant series - assumed \'series\' (this will throw an Error in a future version of PHP)', 'D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php', 24, [])
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\Project\\xampp\\htdocs\\etask\\app\\Views\\todolist\\input_problem_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolist/input_problem_view', [], true)
+ 5 APPPATH\Controllers\TodoList.php(19): view('todolist/input_problem_view')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 01:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 01:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 02:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 02:00:43 --> Argument 2 passed to view() must be of the type array, string given, called in D:\Project\xampp\htdocs\etask\app\Controllers\TodoList.php on line 18
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\TodoList.php(18): view('todolist/input_problem_view', 'TSK')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 02:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 02:01:12 --> Argument 2 passed to view() must be of the type array, string given, called in D:\Project\xampp\htdocs\etask\app\Controllers\TodoList.php on line 18
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\TodoList.php(18): view('todolist/input_problem_view', 'series')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 02:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 02:01:33 --> Use of undefined constant compact - assumed 'compact' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\TodoList.php on line 18.
+ 1 APPPATH\Controllers\TodoList.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant compact - assumed \'compact\' (this will throw an Error in a future version of PHP)', 'D:\\Project\\xampp\\htdocs\\etask\\app\\Controllers\\TodoList.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TodoList->input_problem()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TodoList))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 02:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 02:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
